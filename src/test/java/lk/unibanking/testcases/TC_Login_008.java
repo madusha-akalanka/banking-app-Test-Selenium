@@ -10,21 +10,26 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class TC_Login_002 extends BaseClass {
+public class TC_Login_008 extends BaseClass {
+
+    //Login with Valid Data-Positive Test Case
 
     @Test
-    void userIdLabelTest() {
+    void testValidData() {
 
         LoginPage loginPage = new LoginPage(driver);
-        if (loginPage.getUserIdLabel().isDisplayed()) {
+        loginPage.setTextUserName(userName);
+        loginPage.setTxtPassword(password);
+        loginPage.loginBtnClick();
+
+        if (driver.getTitle().equals("Guru99 Bank Manager HomePage")) {
             Assert.assertTrue(true);
-            logger.info("UserId Label is Available");
+            logger.info("Successfully Login");
         } else {
             Assert.assertTrue(false);
-            logger.warn("UserId Label is not Available");
-            captureScreenShot(driver, "userIdLabelTest");
+            logger.info("Login Failed");
         }
-    }
 
+    }
 
 }

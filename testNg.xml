@@ -6,14 +6,36 @@
     <listeners>
         <listener class-name="lk.unibanking.utilities.Reporting"></listener>
     </listeners>
-    <test name="TC_Login_001 ">
+    <test name="Login_Page_GUI_TestCases" enabled="false">
         <parameter name="browser" value="firefox"></parameter>
         <classes>
             <class name="lk.unibanking.testcases.TC_Login_001"/>
             <class name="lk.unibanking.testcases.TC_Login_002"/>
+            <class name="lk.unibanking.testcases.TC_Login_003"/>
+            <class name="lk.unibanking.testcases.TC_Login_004"/>
+            <class name="lk.unibanking.testcases.TC_Login_005"/>
+            <class name="lk.unibanking.testcases.TC_Login_006"/>
+            <class name="lk.unibanking.testcases.TC_Login_007"/>
 
         </classes>
 
+    </test>
+
+    <test name="LoginFunction_Test_Cases" enabled="false">
+        <classes>
+            <class name="lk.unibanking.testcases.TC_Login_008"/>
+            <class name="lk.unibanking.testcases.TC_Login_009"/>
+            <class name="lk.unibanking.testcases.TC_Login_010"/>
+            <class name="lk.unibanking.testcases.TC_Login_011"/>
+            <class name="lk.unibanking.testcases.TC_Login_012"/>
+        </classes>
+
+    </test>
+
+    <test name="Test_Login_DD">
+        <classes>
+            <class name="lk.unibanking.testcases.TC_Login_DataDriven"></class>
+        </classes>
     </test>
 
 
