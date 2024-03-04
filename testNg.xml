@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Banking System App-Test">
+
+    <listeners>
+        <listener class-name="lk.unibanking.utilities.Reporting"></listener>
+    </listeners>
+    <test name="TC_Login_001 ">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="lk.unibanking.testcases.TC_Login_001"/>
+            <class name="lk.unibanking.testcases.TC_Login_002"/>
+
+        </classes>
+
+    </test>
+
+
+</suite>
