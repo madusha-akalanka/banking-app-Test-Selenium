@@ -1,11 +1,9 @@
 package lk.unibanking.testcases;
 
 import lk.unibanking.pageobject.LoginPage;
-import static org.testng.Assert.*;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 
 public class TC_Login_001 extends BaseClass{
@@ -21,7 +19,7 @@ public class TC_Login_001 extends BaseClass{
         }else{
             Assert.assertTrue(false);
             logger.warn("Heading  is not Available");
-            captureScreenShot(driver,"headerTest");
+            captureScreenShot("headerTest");
         }
     }
 }

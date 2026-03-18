@@ -16,7 +16,7 @@ public class TC_Login_007 extends BaseClass {
         } else {
             Assert.assertTrue(false);
             logger.warn("Reset Button is not Available");
-            captureScreenShot(driver, "resetButtonAvailableTest");
+            captureScreenShot("resetButtonAvailableTest");
         }
     }
 

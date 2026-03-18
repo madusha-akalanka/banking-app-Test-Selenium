@@ -24,7 +24,7 @@ public class Reporting extends TestListenerAdapter {
 
     @Override
     public void onStart(ITestContext testContext) {
-        String timestamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+        String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
         String reportName = "Test-Report" + timestamp + ".html";
         File dir = new File("reports");
         if (!dir.exists()) {
