@@ -16,7 +16,7 @@ public class TC_Login_006 extends BaseClass {
         } else {
             Assert.assertTrue(false);
             logger.warn("Login Button is not Available");
-            captureScreenShot(driver, "loginButtonAvailableTest");
+            captureScreenShot("loginButtonAvailableTest");
         }
     }
 

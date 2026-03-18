@@ -56,7 +56,7 @@ public class TC_Login_DataDriven extends BaseClass{
     @DataProvider(name="loginData")
     String[][] getData() throws IOException {
 
-        String path="/home/akalanka/Desktop/selenium IDE/banking-app-test/src/test/java/lk/unibanking/testdata/LoginData.xlsx";
+        String path="testData/LoginData.xlsx";
         int row= XLUtil.getRowCount(path,"Sheet1");
         int col=XLUtil.getCellCount(path,"Sheet1",1);
         String[][] logindata = new String[row][col];

@@ -65,7 +65,7 @@ public class BaseClass {
         driver.quit();
     }
 
-    public void captureScreenShot(WebDriver driver,String name){
+    public void captureScreenShot(String name){
         TakesScreenshot ts= (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
         File targetFile = new File("screenshot/" + name+".png");

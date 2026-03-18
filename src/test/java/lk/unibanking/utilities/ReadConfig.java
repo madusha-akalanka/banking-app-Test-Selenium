@@ -11,7 +11,7 @@ public class ReadConfig {
 
     public ReadConfig() throws IOException {
 
-        FileInputStream fis = new FileInputStream("/home/akalanka/Desktop/selenium IDE/banking-app-test/src/test/resources/application.properties");
+        FileInputStream fis = new FileInputStream("src/test/resources/application.properties");
         properties.load(fis);
 
 

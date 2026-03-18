@@ -16,7 +16,7 @@ public class TC_Login_005 extends BaseClass {
         } else {
             Assert.assertTrue(false);
             logger.warn("Password text-field is not Available");
-            captureScreenShot(driver, "passwordFieldChecking");
+            captureScreenShot("passwordFieldChecking");
         }
     }
 

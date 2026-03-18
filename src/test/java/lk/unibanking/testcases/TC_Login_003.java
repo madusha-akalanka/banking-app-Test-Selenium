@@ -16,7 +16,7 @@ public class TC_Login_003 extends BaseClass {
         } else {
             Assert.assertTrue(false);
             logger.warn("Password Label is not Available");
-            captureScreenShot(driver, "passwordLabelTest");
+            captureScreenShot("passwordLabelTest");
         }
     }
 

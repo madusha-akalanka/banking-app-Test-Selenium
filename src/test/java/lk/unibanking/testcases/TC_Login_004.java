@@ -16,7 +16,7 @@ public class TC_Login_004 extends BaseClass {
         } else {
             Assert.assertTrue(false);
             logger.warn("Username text-field is not Available");
-            captureScreenShot(driver, "textFieldChecking");
+            captureScreenShot("textFieldChecking");
         }
     }
 
